@@ -1,0 +1,63 @@
+class: SchemaDefRequirement
+types:
+  - name: BlastnType
+    type: record
+    fields:
+      - name: db
+        type: string
+      - name: dbtype
+        type: string
+      - name: outfmt
+        type: string?
+      - name: best_hit_overhang
+        type: double?
+      - name: best_hit_score_edge
+        type: double?
+      - name: dust
+        type: string?
+      - name: evalue
+        type: double?
+      - name: gapextend
+        type: int?
+      - name: gapopen 
+        type: int?
+      - name: penalty
+        type: int?
+      - name: perc_identity
+        type: double?
+      - name: reward 
+        type: int?
+      - name: soft_masking
+        type: string?
+      - name: task 
+        type: string?
+      - name: template_length
+        type: int?
+      - name: template_type
+        type: string?
+      - name: window_size
+        type: int?
+      - name: word_size
+        type: int?
+      - name: xdrop_gap
+        type: int?
+      - name: no_greedy
+        type: boolean?
+  - name: KaryotType
+    type: enum
+    symbols: [pro, eu]
+  - name: SettingsType
+    type: record
+    fields:
+      - name: common
+        type:
+          type: array
+          items: BlastnType
+      - name: prok
+        type: BlastnType
+      - name: euk
+        type: BlastnType
+      - name: prok_adapt
+        type: BlastnType
+      - name: euk_adapt
+        type: BlastnType

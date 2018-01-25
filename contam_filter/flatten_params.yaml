@@ -1,0 +1,20 @@
+list_one:
+  &id001
+  - a
+  - b
+  - c
+  
+list_two: &id002
+  - e
+  - f
+  - g
+
+list_three: &id003
+  - h
+  - i
+  - j
+
+input:
+  - *id001
+  - *id002
+  - *id003

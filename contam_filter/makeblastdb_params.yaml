@@ -1,0 +1,6 @@
+input_file:
+  class: File
+  location: contam_in_euks.fa
+#title: "This is the title."
+dbtype: nucl
+#outdb: george

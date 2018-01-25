@@ -1,0 +1,6 @@
+#input_file:
+#  class: File
+#  path: db/contam_in_euks.fa.gz
+input_file:
+  class: File
+  path: db/contam_in_prok.fa

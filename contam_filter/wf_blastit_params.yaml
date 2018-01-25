@@ -1,0 +1,28 @@
+#arguments: ["-db", "/home/ubuntu/contam-dbs/contam_in_euks/contam_in_euks.fa", "-outfmt", "6", "-best_hit_overhang", "0.1", "-best_hit_score_edge", "0.1", "-dust", "yes", "-evalue", "1E-9", "-gapextend", "2", "-gapopen", "4", "-penalty", "-4", "-perc_identity", "95", "-reward", "3", "-soft_masking", "true", "-task", "megablast", "-template_length", "18", "-template_type", "coding", "-window_size", "120", "-word_size", "12", "-xdrop_gap", "20", "-no_greedy"]
+#arguments: ["-db", "/home/ubuntu/contam-dbs/mito/mito.nt", "-dust", "yes", "-soft_masking", "true", "-perc_identity", "98.6", "-outfmt", "6"]
+dbfasta:
+  db:
+    class: File
+    location: db/contam_in_euks.fa.gz
+  dbtype: "nucl"
+  outfmt: "6"
+  best_hit_overhang: 0.1 
+  best_hit_score_edge: 0.1 
+  dust: "yes"
+  evalue: 1E9
+  gapextend: 2
+  gapopen: 4
+  penalty: -4
+  perc_identity: 95 
+  reward: 3 
+  soft_masking: "true"
+  task: "megablast"
+  template_length: 18 
+  template_type: "coding" 
+  window_size: 120 
+  word_size: 12 
+  xdrop_gap: 20 
+  no_greedy: true
+query:
+  class: File
+  location: pa_test.fa

@@ -1,0 +1,6 @@
+default_fastas:
+  $import: "default_fastas.yaml"
+query:
+  class: File
+  location: pa_test.fa
+karyot_type: eu
