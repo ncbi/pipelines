@@ -62,7 +62,7 @@ steps:
       class: CommandLineTool
       hints:
         DockerRequirement:
-          dockerPull: ncbi/contamfilter
+          dockerPull: ncbi/blast_contamfilter
       baseCommand: VSlistTo1HitPerLine.awk
       stdout: vecscreen.output
       inputs:

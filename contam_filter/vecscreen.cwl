@@ -2,7 +2,7 @@ cwlVersion: v1.0
 class: CommandLineTool
 hints:
   DockerRequirement:
-    dockerPull: ncbi/contamfilter
+    dockerPull: ncbi/blast_contamfilter
     
 baseCommand: vecscreen
 
