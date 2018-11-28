@@ -1,4 +1,5 @@
-# NCBI Antimicrobial Resistance Gene Finder (alpha)
+# ~~NCBI Antimicrobial Resistance Gene Finder (alpha)~~ DEPRICATED
+# Please see https://github.com/ncbi/amr/wiki for the new easier-to-install version
 
 ## Overview
 
